@@ -6,10 +6,13 @@
 
 
 def fahrenheit():
+    # This function will convert °C to °F
+    # input
     user_temp = input("Enter a temperature (°C) : ")
+    # process & output
     try:
         user_temp = int(user_temp)
-        f_temp = (9 / 5) * user_temp + 32
+        f_temp = round((9 / 5) * user_temp + 32, 2)
         print("{0}°C is equal to {1}°F".format(user_temp, f_temp))
     except (Exception):
         print("Invalid input")
